@@ -45,7 +45,7 @@ nav ul {
     margin-top: 50px;
     width: 80%;
     justify-content: center;
-    margin-left: 10%;
+    margin-left: 13%;
 }
 
 nav ul li {
@@ -68,7 +68,7 @@ nav ul li a:hover {
 #intro {
     text-align: center;
     width: 100%;
-    margin-top: 8%;
+    margin-top: 10%;
     position: relative;
 }
 
@@ -89,14 +89,14 @@ nav ul li a:hover {
 
 .intro_star1 {
     position: absolute;
-    left: 18%;
+    left: 13%;
     top: 0;
     width: 19vw;
 }
 
 .intro_star2 {
     position: absolute;
-    left: 62%;
+    left: 65%;
     top: 50%;
 }
 
@@ -106,26 +106,35 @@ nav ul li a:hover {
     text-align: center;
 }
 
-#main h1 {
-    font-size: 20px;
-}
-
-#main p {
+.main_content {
     line-height: 50px;
     margin-top: 2%;
     font-size: 20px;
 }
 
-.icon_box {
-    margin-top: 2%;
+.icon_box1 {
+    padding-top: 0.5%;
+    display: flex;
+    justify-content: center;
+    margin-left: 1%;
 }
 
-.icon {
+.css p {
+    margin-top: 5%;
+}
+
+.iconbox1_wrapper {
     margin-right: 1%;
 }
 
+.iconbox1_wrapper p {
+    font-size: 15px;
+    padding-top: 10%;
+}
+
+
 .arrow {
-    margin-top: 2%;
+    margin-bottom: 15%;
 }
 
 .main_project {
@@ -141,8 +150,12 @@ nav ul li a:hover {
     z-index: 9999;
 }
 
+.stack {
+    margin-top: 1%;
+}
+
 .main_box {
-    background-color: #CCFF00;
+    background-color: #F198FF;
     width: 75%;
     height: 80%;
     border-top-right-radius: 50%;
@@ -152,7 +165,7 @@ nav ul li a:hover {
     z-index: -99;
 }
 
-.btn {
+.btn0 {
     margin-top: 8%;
     width: 15vw;
 }
@@ -164,13 +177,8 @@ nav ul li a:hover {
     display: block;
 }
 
-.bridge {
-    text-align: center;
-    margin-top: 15%;
-}
-
 .side_1 {
-    margin-top: 10%;
+    margin-top: 15%;
     width: 100%;
     display: block;
     text-align: center;
@@ -179,6 +187,7 @@ nav ul li a:hover {
 .number_wrap {
     margin-left: 10%;
     display: flex;
+    margin-bottom: 10%;
 }
 
 .number {
@@ -197,33 +206,29 @@ nav ul li a:hover {
 }
 
 .side_project {
-    width: 100%;
-    display: block;
+    margin-top: 15%;
     position: relative;
 }
 
-.project {
-    width: 70%;
-    height: 80vh;
-    background-image: url(images/sub1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.side_project img {
+    width: 70vw;
+    margin: auto;
+    margin-top: -1%;
     border-top-right-radius: 30%;
+    z-index: 9999;
     filter: drop-shadow(0px 0px 5mm #CCFF00);
-    margin: 0 auto;
-    margin-top: 6%;
 }
+
 
 .green_ret {
     width: 70%;
-    height: 80vh;
+    height: 100%;
     border: 3px solid #B5FF00;
     border-top-right-radius: 30%;
-    margin: auto;
     position: absolute;
-    z-index: -999;
     left: 18%;
-    top: -6%;
+    top: -11%;
+    z-index: -99;
 }
 
 .circle_wrap {
@@ -244,7 +249,8 @@ nav ul li a:hover {
 }
 
 .circle p {
-    color: black;
+    color: #321837;
+    font-weight: bold;
     position: absolute;
     top: 30%;
     left: 10%;
@@ -261,7 +267,7 @@ nav ul li a:hover {
 .content_wrap {
     width: 100%;
     text-align: center;
-    margin-top: 17%;
+
 }
 
 .content_wrap p {
@@ -269,12 +275,18 @@ nav ul li a:hover {
     font-size: 20px;
 }
 
-.icon_box {
-    margin-left: 2%;
+.icon_react {
+    transform: scale(0.8);
+    margin-top: -10%;
 }
 
-.btn {
-    margin-top: 5%;
+.tech {
+    margin-top: 2%;
+}
+
+.btn1 {
+    margin-top: 18%;
+    width: 15vw;
 }
 
 /* side2 section */
@@ -286,8 +298,10 @@ nav ul li a:hover {
 }
 
 .nudake_title1 {
+    text-align: left;
     margin-top: 10%;
-    font-size: 20px;
+    margin-left: 10%;
+    font-size: 1.2vw;
 }
 
 .nudake_wrapper_full {
@@ -305,7 +319,7 @@ nav ul li a:hover {
 }
 
 .txt_1 {
-    font-size: 15px;
+    font-size: 0.8vw;
     margin-top: 5%;
     line-height: 2em;
 }
@@ -316,27 +330,33 @@ nav ul li a:hover {
 }
 
 .arrow_1 {
-    width: 4vw;
-    margin-top: 12%;
-    margin-right: 18%;
+    transform: scale(0.3);
+    position: absolute;
+    left: 32%;
+    top: -15%;
 }
 
 .arrow_2 {
-    width: 4vw;
-    margin-top: 12%;
-    margin-left: 19%;
+
+    position: absolute;
+    transform: scale(0.3);
+    top: -15%;
+    left: 58%;
+
 }
 
 .nudake_title {
-    margin-top: -2%;
-    font-size: 20px;
+    text-align: left;
+    margin-left: 10%;
+    font-size: 1.2vw;
+    margin-top: 10%;
 }
 
 .green_btn_wrapper {
     margin-top: 12%;
     display: flex;
     justify-content: center;
-    margin-left: 2%;
+    position: relative;
 }
 
 .green_btn_wrapper img {
@@ -344,83 +364,111 @@ nav ul li a:hover {
 }
 
 .green {
-    margin: 0 5%;
+    margin: 0 8%;
 }
 
 .green_1 p {
-    font-size: 15px;
+    font-size: 0.8vw;
     margin-top: 20%;
     line-height: 3rem;
 }
 
 
 .green_2 p {
-    font-size: 15px;
+    font-size: 0.8vw;
     line-height: 3rem;
     margin-top: 20%;
 }
 
 .green_3 p {
-    font-size: 15px;
+    font-size: 0.8vw;
     line-height: 3rem;
     margin-top: 14%;
 }
 
-.arrow_wrapper {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 3%;
+.arrowpic_wrapper {
     position: relative;
+    margin-top: 3%;
 }
 
 .green_arrow1 {
     position: absolute;
-    left: 28%;
+    left: 23%;
+    width: 1.5vw;
 }
 
 .green_arrow2 {
     position: absolute;
-    left: 38%;
+    left: 42%;
+    width: 7vw;
 }
 
 .green_arrow3 {
     position: absolute;
-    left: 70%;
+    left: 75%;
+    width: 1.5vw;
 }
 
-.nudake_page {
-    margin-top: 12%;
+.nudake_img_wrapper {
+    margin-top: 6%;
+    position: absolute;
+    z-index: -99;
+    margin-left: 9%;
 }
 
 .nudake_content {
     margin-top: 10%;
 }
 
+.btn3 {
+    width: 15vw;
+    margin-top: 37%;
+}
 
 /* side_3 section */
 .side_3 {
-    margin-top: 10%;
+    margin-top: 15%;
     width: 100%;
     display: block;
     text-align: center;
 }
 
-.project3 {
-    width: 70%;
-    height: 80vh;
-    background-image: url(images/sub3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.side_project {
+    margin-top: 15%;
+    position: relative;
+}
+
+.side_project img {
+    width: 70vw;
+    margin: auto;
+    margin-top: -1%;
     border-top-right-radius: 30%;
+    z-index: 9999;
     filter: drop-shadow(0px 0px 5mm #CCFF00);
-    margin: 0 auto;
-    margin-top: 6%;
+}
+
+
+.green_ret {
+    width: 70%;
+    height: 100%;
+    border: 3px solid #B5FF00;
+    border-top-right-radius: 30%;
+    position: absolute;
+    left: 18%;
+    top: -11%;
+    z-index: -99;
+}
+
+.btn4 {
+    width: 15vw;
+    margin-top: 18%;
 }
 
 /* design section */
 .bridge {
     text-align: center;
+    margin-top: 20%;
 
 }
 
@@ -493,6 +541,7 @@ nav ul li a:hover {
 
 .spin {
     width: 100%;
+    cursor: pointer;
 }
 
 .position1 {
@@ -541,25 +590,25 @@ nav ul li a:hover {
 .starme_1 {
     position: absolute;
     top: 0;
-    left: 48.5%;
+    left: 49%;
 }
 
 .starme_2 {
     position: absolute;
-    top: 45%;
-    left: 25%;
+    top: 49%;
+    left: 28%;
 }
 
 .starme_3 {
     position: absolute;
-    top: 45%;
+    top: 49%;
     left: 68%;
 }
 
 .starme_4 {
     position: absolute;
     top: 95%;
-    left: 44%;
+    left: 47%;
 
 }
 
@@ -575,8 +624,9 @@ nav ul li a:hover {
 }
 
 .intro_title {
-    font-size: 25px;
+    font-size: 1.5vw;
     letter-spacing: 1.5px;
+    font-weight: bold;
 }
 
 .program {
@@ -587,45 +637,46 @@ nav ul li a:hover {
     display: flex;
 }
 
-.program ul {
-    list-style: none;
-    width: 20%;
-    display: block;
-    margin-top: 5%;
+.skills_wrapper {
+    display: flex;
+    margin-top: 8%;
 }
 
-.web_icons li {
-    margin-top: 10%;
+.skill_wrapper {
+    margin-right: 40%;
 }
 
-.web_stars li {
-    margin-top: 19%;
+.icon_js {
+    transform: scale(0.8);
 }
 
-.web_stars {
-    margin-left: -9%;
+.skill_star {
+    margin-left: -5%;
 }
 
-.design_icons {
-    margin-left: 20%;
+.skill_star4 {
+    margin-left: -3%;
 }
 
-.design_icons li {
-    margin-top: 14%;
+.skill_star5 {
+    margin-left: -7.5%;
 }
 
-.design_stars li {
-    margin-top: 22%;
+.skill1_wrapper {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 20%;
 }
 
-.design_stars {
-    margin-left: -9%;
+.skill1_left {
+    margin-right: 50%;
 }
 
 /* contact section */
 .contact {
     width: 100%;
-    background-color: #CCFF00;
+    background-color: rgba(241, 152, 255, 0.5)
 }
 
 .contact_wrapper {
