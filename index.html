@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>RyuKyeongSeo's Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
     <script defer src="portfolio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+        integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+        integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+        crossorigin="anonymous"></script>
 
 </head>
 
@@ -16,12 +22,12 @@
         <header id="header">
             <nav>
                 <ul>
-                    <li><a href="">Project 1</a></li>
-                    <li><a href="">Project 2</a></li>
-                    <li><a href="">Project 3</a></li>
-                    <li><a href="">Project 4</a></li>
-                    <li><a href="">Designs</a></li>
-                    <li><a href="">About Me</a></li>
+                    <li><a href="#main">Work 1</a></li>
+                    <li><a href="#side_1">Work 2</a></li>
+                    <li><a href="#side_2">Work 3</a></li>
+                    <li><a href="#side_3">Work 4</a></li>
+                    <li><a href="#designs">Designs</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
                 </ul>
             </nav>
         </header>
@@ -30,22 +36,31 @@
         <section id="intro">
             <img src="images/intro star1.png" class="intro_star1">
             <img src="images/intro star.png" class="intro_star2">
+            <img src="images/intro star.png" class="intro_star3">
             <p class="title">RYU KYEONG SEO's</p>
             <h1 class="stroke">Portfolio</h1>
         </section>
 
+        <div class="arrow_section">
+
+            <a href="#main"><img src="images/Arrow 1.png" class="arrow arrow_hover"></a>
+            <p class="scroll">scroll</p>
+        </div>
         <!-- Main Section -->
-        <section id="main">
-            <img src="images/Arrow 1.png" class="arrow">
+        <section id="main" class="section">
+
+
             <div class="number_wrap">
                 <img class="number" src="images/number_star.png">
                 <h1>1</h1>
                 <p>Movie Search Program</p>
             </div>
 
-            <p class="main_content">영화검색 프로그램을 JavaScript와 Open API를 활용해서 제작하였습니다.
+            <p class="main_content">영화검색 기능과 어카운트 생성 기능을 java script 와 fetch api 를 활용하여
+                제작하였습니다.
                 <br>프로젝트 작업 기간 : 2022.10.09~2022.10.15
             </p>
+
             <p class="stack">기술 스택</p>
             <div class="icon_box1">
                 <div class="iconbox1_wrapper">
@@ -61,14 +76,19 @@
                     <p>JS</p>
                 </div>
             </div>
+            <div class="description">
+                <li>Fetch data를 활용한 영화 검색 기능</li>
+                <li>모달 윈도우를 활용한 Account 생성 기능</li>
+                <li>데이터 제출 양식에 의한 팝업창</li>
+            </div>
             <div class="main_project">
-                <img src="images/main.png">
+                <a href="https://lustrous-biscochitos-5b588a.netlify.app/"><img src="images/main.png"></a>
                 <div class="main_box"></div>
             </div>
             <a href="https://lustrous-biscochitos-5b588a.netlify.app/"><img src="images/button.png" class="btn0"></a>
         </section>
         <section class="side">
-            <div class="side_1">
+            <div class="side_1 section" id="side_1">
                 <div class="number_wrap">
                     <img class="number" src="images/number_star.png">
                     <h1>2</h1>
@@ -94,15 +114,12 @@
                         <p>REACT</p>
                     </div>
                 </div>
-                <p class="tech">사용 기술</p>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                </ul>
+                <div class="description">
+                    <li>useContext를 이용한 상태관리</li>
+                    <li>수량 추가에 따른 Cart 애니메이션</li>
+                </div>
                 <div class="side_project">
-                    <img src="/images/sub1.png">
+                    <a href="https://charming-crepe-00c2b9.netlify.app"><img src="/images/sub1.png"></a>
                     <div class="green_ret"></div>
                 </div>
                 <div class="circle_wrap">
@@ -116,7 +133,7 @@
                 <a href="https://charming-crepe-00c2b9.netlify.app"><img src="images/button.png" class="btn1"></a>
             </div>
 
-            <div class="side_2">
+            <div class="side_2 section" id="side_2">
                 <div class="number_wrap">
                     <img class="number" src="images/number_star.png">
                     <h1>3</h1>
@@ -144,6 +161,10 @@
                         <img src="images/icon_fig.png" class="icon_react">
                         <p>FIGMA</p>
                     </div>
+                </div>
+                <div class="description">
+                    <li>Scroll event를 이용한 슬로건 강조</li>
+                    <li>디저트 상세 페이지 모달 윈도우</li>
                 </div>
                 <h1 class="nudake_title1">기존 홈페이지 Pain Points</h1>
                 <div class="nudake_wrapper_full">
@@ -195,7 +216,7 @@
                 <a href="https://zesty-brigadeiros-fe4de0.netlify.app"><img src="images/button.png" class="btn3"></a>
             </div>
 
-            <div class="side_3">
+            <div class="side_3 section" id="side_3">
                 <div class="number_wrap">
                     <img class="number" src="images/number_star.png">
                     <h1>4</h1>
@@ -225,9 +246,12 @@
                         <p>FIGMA</p>
                     </div>
                 </div>
-
+                <div class="description">
+                    <li>기존 홈페이지에서 반응형 단계 추가</li>
+                    <li>기존 홈페이지 footer 부분 정렬 수정</li>
+                </div>
                 <div class="side_project">
-                    <img src="images/sub3.png">
+                    <a href="https://tubular-kheer-36975e.netlify.app/"><img src="images/sub3.png"></a>
                     <div class="green_ret"></div>
                 </div>
                 <div class="circle_wrap">
@@ -241,7 +265,7 @@
                 <a href="https://tubular-kheer-36975e.netlify.app/"><img src="images/button.png" class="btn4"></a>
             </div>
         </section>
-        <section class="designs">
+        <section class="designs section" id="designs">
             <div class="bridge">
                 <img src="images/intro star.png" class="deco_star">
                 <img src="images/deco_star2.png" class="deco_star2">
@@ -278,13 +302,13 @@
             </div>
         </div>
 
-        <section class="aboutme">
+        <section class="aboutme section" id="aboutme">
             <div class="bridge">
                 <p>About Me</p>
                 <img src="images/Arrow 1.png" class="icon bridge_arrow">
             </div>
             <div class="starme">
-                <img src="images/star_me.png">
+                <img src="images/star_me.png" class="big_star">
                 <p class="starme_1">Web</p>
                 <p class="starme_2">Marketing</p>
                 <p class="starme_3">Design</p>
@@ -348,7 +372,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact section">
             <div class="contact_wrapper">
                 <p class="contact_title">Contact</p>
                 <div class="contact_icon_wrapper">

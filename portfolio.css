@@ -13,6 +13,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +22,15 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     font-family: 'Roboto', sans-serif;
+}
+
+.section {
+    transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
 }
 
 p {
@@ -45,11 +55,11 @@ nav ul {
     margin-top: 50px;
     width: 80%;
     justify-content: center;
-    margin-left: 13%;
+    margin-left: 12%;
 }
 
 nav ul li {
-    margin-right: 10%;
+    margin-right: 6%;
     list-style: none;
 }
 
@@ -89,15 +99,40 @@ nav ul li a:hover {
 
 .intro_star1 {
     position: absolute;
-    left: 13%;
-    top: 0;
+    left: 12%;
+    top: -45px;
     width: 19vw;
 }
 
 .intro_star2 {
     position: absolute;
-    left: 65%;
-    top: 50%;
+    left: 70%;
+    top: 79%;
+}
+
+.intro_star3 {
+    position: absolute;
+    left: 75%;
+    top: 42%;
+}
+
+/* arrow_section */
+.arrow_section {
+    margin-top: 15%;
+    text-align: center;
+}
+
+.arrow_hover:hover {
+    opacity: 0.5;
+}
+
+.arrow_hover {
+    margin-top: -3%;
+}
+
+.scroll {
+    margin-top: -14%;
+    margin-bottom: 5%;
 }
 
 /* main section */
@@ -105,6 +140,7 @@ nav ul li a:hover {
     margin-top: 15%;
     text-align: center;
 }
+
 
 .main_content {
     line-height: 50px;
@@ -139,6 +175,19 @@ nav ul li a:hover {
 
 .main_project {
     position: relative;
+}
+
+.description {
+    margin-top: 2%;
+}
+
+.description li {
+    font-size: 20px;
+    line-height: 2em;
+}
+
+.description li::marker {
+    color: #F198FF;
 }
 
 .main_project img {
@@ -302,6 +351,9 @@ nav ul li a:hover {
     margin-top: 10%;
     margin-left: 10%;
     font-size: 1.2vw;
+    text-decoration: underline;
+    text-decoration-color: #B5FF00;
+    text-underline-position: under;
 }
 
 .nudake_wrapper_full {
@@ -332,7 +384,7 @@ nav ul li a:hover {
 .arrow_1 {
     transform: scale(0.3);
     position: absolute;
-    left: 32%;
+    left: 30.5%;
     top: -15%;
 }
 
@@ -350,6 +402,9 @@ nav ul li a:hover {
     margin-left: 10%;
     font-size: 1.2vw;
     margin-top: 10%;
+    text-decoration: underline;
+    text-decoration-color: #B5FF00;
+    text-underline-position: under;
 }
 
 .green_btn_wrapper {
@@ -465,6 +520,7 @@ nav ul li a:hover {
     margin-top: 18%;
 }
 
+
 /* design section */
 .bridge {
     text-align: center;
@@ -576,6 +632,31 @@ nav ul li a:hover {
     opacity: 0.2;
 }
 
+.big_star:hover {
+    -webkit-animation: spin 6s linear infinite;
+    -moz-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
 .starme {
     text-align: center;
     margin-top: 10%;
@@ -608,7 +689,7 @@ nav ul li a:hover {
 .starme_4 {
     position: absolute;
     top: 95%;
-    left: 47%;
+    left: 47.3%;
 
 }
 
