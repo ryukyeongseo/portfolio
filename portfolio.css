@@ -33,6 +33,24 @@ body {
     transform: translateY(8rem);
 }
 
+.ani_left {
+    transition: transform 1s, opacity 1s;
+}
+
+.ani--hidden {
+    opacity: 0;
+    transform: translateX(-30rem);
+}
+
+.ani-right {
+    transition: transform 1s, opacity 1s;
+}
+
+.anir--hidden {
+    opacity: 0;
+    transform: translateX(30rem);
+}
+
 p {
     font-size: 1vw;
 }
@@ -88,6 +106,7 @@ nav ul li a:hover {
     color: #100C1D;
     padding: 63px;
     text-shadow: -1px 0px #D7D7D7, 0px 1px #D7D7D7, 1px 0px #D7D7D7, 0px -1px #D7D7D7;
+    animation: fadeIn2 1.5s ease-in-out;
 }
 
 .title {
@@ -96,6 +115,31 @@ nav ul li a:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 3;
+        transform: none;
+    }
+}
+
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 3;
+        transform: none;
+    }
 }
 
 .intro_star1 {
@@ -147,6 +191,7 @@ nav ul li a:hover {
     line-height: 50px;
     margin-top: 2%;
     font-size: 1.3vw;
+
 }
 
 .icon_box1 {
@@ -180,11 +225,13 @@ nav ul li a:hover {
 
 .description {
     margin-top: 2%;
+    margin-left: 40%;
 }
 
 .description li {
     font-size: 1.3vw;
     line-height: 2em;
+    text-align: left;
 }
 
 .description li::marker {
@@ -243,7 +290,7 @@ nav ul li a:hover {
 
 .number {
     margin-right: 1%;
-    scale: 1;
+    width: 5vw;
 
 }
 
@@ -251,7 +298,7 @@ nav ul li a:hover {
 .number_wrap h1 {
     font-size: 6vw;
     margin-left: 1%;
-    
+
 }
 
 .number_wrap p {
@@ -358,9 +405,20 @@ nav ul li a:hover {
     margin-top: 10%;
     margin-left: 10%;
     font-size: 1.2vw;
-    text-decoration: underline;
+    position: relative;
+    /* text-decoration: underline;
     text-decoration-color: #F198FF;
-    text-underline-position: under;
+    text-underline-position: under; */
+}
+
+.nudake_title1::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -12px;
+    height: 4px;
+    width: 13vw;
+    background: #F198FF;
 }
 
 .nudake_wrapper_full {
@@ -409,9 +467,17 @@ nav ul li a:hover {
     margin-left: 10%;
     font-size: 1.2vw;
     margin-top: 10%;
-    text-decoration: underline;
-    text-decoration-color: #F198FF;
-    text-underline-position: under;
+    position: relative;
+}
+
+.nudake_title::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -12px;
+    height: 4px;
+    width: 9.6vw;
+    background: #F198FF;
 }
 
 .green_btn_wrapper {
@@ -457,24 +523,27 @@ nav ul li a:hover {
     position: absolute;
     left: 23%;
     width: 1.5vw;
+    z-index: 100;
 }
 
 .green_arrow2 {
     position: absolute;
     left: 42%;
     width: 7vw;
+    z-index: 100;
 }
 
 .green_arrow3 {
     position: absolute;
     left: 75%;
     width: 1.5vw;
+    z-index: 100;
 }
 
 .nudake_img_wrapper {
     margin-top: 6%;
     position: absolute;
-    z-index: -99;
+    z-index: 99;
     margin-left: 9%;
 }
 
@@ -532,6 +601,7 @@ nav ul li a:hover {
 .designs {
     margin-top: 15%;
 }
+
 .bridge {
     text-align: center;
     margin-top: 20%;
@@ -548,7 +618,7 @@ nav ul li a:hover {
     height: 50vh;
     display: flex;
     align-items: center;
-    margin-top: 15%;
+    margin-top: 25%;
 }
 
 .prev,
@@ -632,30 +702,29 @@ nav ul li a:hover {
     opacity: 0.2;
 }
 
-.big_star:hover {
-    -webkit-animation: spin 6s linear infinite;
-    -moz-animation: spin 6s linear infinite;
-    animation: spin 6s linear infinite;
+.design_des {
+    display: none;
+    color: rgb(26, 24, 24);
+    text-align: center;
+    margin-top: 2%;
+    background-color: #F198FF;
+    height: 50px;
+    width: 50%;
+    margin-left: 26%;
+    border-radius: 30px;
+    vertical-align: middle;
+    padding-top: 2%;
+    font-weight: bold;
 }
 
-@-moz-keyframes spin {
-    100% {
-        -moz-transform: rotate(360deg);
-    }
+.position1:hover .design_des {
+    display: block;
 }
 
-@-webkit-keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
+/* .design_des:hover {
+    color: white;
+} */
 
-@keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
 
 .starme {
     text-align: center;

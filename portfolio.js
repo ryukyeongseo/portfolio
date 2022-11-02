@@ -139,3 +139,52 @@ allSections.forEach(function (section) {
     section.classList.add('section--hidden');
 });
 
+//ani_left
+
+const allLeft = document.querySelectorAll('.ani_left');
+
+const revealSection1 = function (entries, observer) {
+    const [entry] = entries;
+    console.log(entry);
+
+    if (!entry.isIntersecting) return;
+
+    entry.target.classList.remove('ani--hidden');
+    observer.unobserve(entry.target); //no more observing after postions read
+};
+
+const sectionObserver1 = new IntersectionObserver(revealSection1, {
+    root: null,
+    threshold: 0.15,
+    rootMargin: '200px',
+});
+
+allLeft.forEach(function (left) {
+    sectionObserver1.observe(left);
+    left.classList.add('ani--hidden');
+});
+
+// ani_right
+const allRight = document.querySelectorAll('.ani-right');
+
+const revealSection2 = function (entries, observer) {
+    const [entry] = entries;
+    console.log(entry);
+
+    if (!entry.isIntersecting) return;
+
+    entry.target.classList.remove('anir--hidden');
+    observer.unobserve(entry.target); //no more observing after postions read
+};
+
+const sectionObserver2 = new IntersectionObserver(revealSection2, {
+    root: null,
+    threshold: 0.15,
+    rootMargin: '200px',
+});
+
+allRight.forEach(function (right) {
+    sectionObserver2.observe(right);
+    right.classList.add('anir--hidden');
+});
+
