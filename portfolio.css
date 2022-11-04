@@ -163,8 +163,9 @@ nav ul li a:hover {
 
 /* arrow_section */
 .arrow_section {
-    margin-top: 22%;
+    margin-top: 17%;
     text-align: center;
+    position: relative;
 }
 
 .arrow_hover:hover {
@@ -176,9 +177,12 @@ nav ul li a:hover {
 }
 
 .scroll {
-    margin-top: -14%;
-    margin-bottom: 5%;
+    position: absolute;
+    top: -40%;
+    left: 48%;
+    width: 4vw;
 }
+
 
 /* main section */
 #main {
@@ -213,7 +217,6 @@ nav ul li a:hover {
     font-size: 15px;
     padding-top: 10%;
 }
-
 
 .arrow {
     margin-bottom: 15%;
@@ -747,20 +750,20 @@ nav ul li a:hover {
 
 .starme_2 {
     position: absolute;
-    top: 49%;
+    top: 48.5%;
     left: 28%;
 }
 
 .starme_3 {
     position: absolute;
-    top: 49%;
+    top: 48.5%;
     left: 68%;
 }
 
 .starme_4 {
     position: absolute;
     top: 95%;
-    left: 47.3%;
+    left: 47%;
 
 }
 
