@@ -25,7 +25,7 @@ body {
 }
 
 .section {
-    transition: transform 1s, opacity 1s;
+    transition: transform 7s, opacity 1s;
 }
 
 .section--hidden {
