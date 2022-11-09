@@ -174,6 +174,7 @@ nav ul li a:hover {
 
 .arrow_hover {
     margin-top: -3%;
+    width: 2vw;
 }
 
 .scroll {
@@ -205,17 +206,17 @@ nav ul li a:hover {
     margin-left: 1%;
 }
 
-.css p {
-    margin-top: 5%;
-}
-
 .iconbox1_wrapper {
     margin-right: 1%;
 }
 
 .iconbox1_wrapper p {
-    font-size: 15px;
+    font-size: 1vw;
     padding-top: 10%;
+}
+
+.icon {
+    width: 3vw;
 }
 
 .arrow {
@@ -384,6 +385,7 @@ nav ul li a:hover {
 .icon_react {
     transform: scale(0.8);
     margin-top: -10%;
+    width: 4vw;
 }
 
 .tech {
@@ -730,6 +732,9 @@ nav ul li a:hover {
     color: white;
 } */
 
+.bridge_arrow {
+    width: 2vw;
+}
 
 .starme {
     text-align: center;
@@ -801,10 +806,6 @@ nav ul li a:hover {
     margin-right: 40%;
 }
 
-.icon_js {
-    transform: scale(0.8);
-}
-
 .skill_star {
     margin-left: -5%;
 }
@@ -817,6 +818,10 @@ nav ul li a:hover {
     margin-left: -7.5%;
 }
 
+.star_skill {
+    width: 12vw;
+}
+
 .skill1_wrapper {
     display: flex;
     /* justify-content: center; */
@@ -826,6 +831,7 @@ nav ul li a:hover {
 
 .skill1_left {
     margin-right: 50%;
+    width: 4vw;
 }
 
 /* contact section */
