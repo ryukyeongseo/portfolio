@@ -810,13 +810,13 @@ nav ul li a:hover {
     margin-left: -5%;
 }
 
-.skill_star4 {
+/* .skill_star4 {
     margin-left: -3%;
 }
 
 .skill_star5 {
     margin-left: -7.5%;
-}
+} */
 
 .star_skill {
     width: 12vw;
@@ -827,6 +827,10 @@ nav ul li a:hover {
     /* justify-content: center; */
     align-items: center;
     margin-bottom: 20%;
+}
+
+.star_skill_space {
+    padding-right: 4%;
 }
 
 .skill1_left {
